@@ -2,15 +2,16 @@
   "name": "react-glitch-fx",
   "version": "0.1.0",
   "private": false,
+  "main": "build/index.js",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
   },
+  "author": "andymacdonald",
+  "license": "MIT",
   "scripts": {
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "webpack",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -29,6 +30,13 @@
       "last 1 safari version"
     ]
   },
+  "keywords": [
+    "animation",
+    "clip-path",
+    "efect",
+    "glitch",
+    "react"
+  ],
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@storybook/addon-actions": "^5.1.11",
