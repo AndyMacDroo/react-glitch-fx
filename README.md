@@ -5,8 +5,17 @@
 
 Simply wrap your target element with `<GlitchFx />` to start using react-glitch-fx:
 
-```
-  <GlitchFx>
-    <img src="./images/react.png" alt="test" />
-  </GlitchFx>
+```javascript
+import GlitchFx from 'react-glitch-fx/lib/GlitchFx';
+
+class Component extends React.Component {
+
+  render() {
+    const { shouldShow, imageHeight, imageSrc } = this.props;
+    return (<GlitchFx>
+        <img src="./images/react.png" alt="test" />
+    </GlitchFx>)
+
+  }
+}
 ```
